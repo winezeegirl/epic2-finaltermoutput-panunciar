@@ -1,0 +1,171 @@
+// MANDALA MIDTERM
+// PANUNCIAR, WINZEE
+// BSEMC 2A
+
+
+const CIRCLE = 400
+const SIDES = 18
+const angle = 360 / SIDES
+
+const op = 8
+const ops = 360 / op
+
+const gd = 16
+const gds = 360 / gd
+function setup() {
+  createCanvas(530, 530);
+  angleMode(DEGREES)
+  rectMode(CENTER)
+}
+function draw() {
+background("#f9ca24");
+
+push()
+translate(width/2, height/2)
+strokeWeight(2);
+
+ellipse(0, 0, 450, 450)
+  
+  
+  push()
+   for (let i = 0; i < gd; i++) {
+    
+    
+     
+    
+    rotate(gds)
+    }
+  pop()
+  
+
+pop()
+
+
+push()
+translate(width/2, height/2)
+strokeWeight(2);
+  fill('black')
+ellipse(0, 0, 430, 430)
+  
+  
+  push()
+   for (let i = 0; i < gd; i++) {
+    
+  push()
+     fill('255,255,255') 
+     ellipse(35, 175, 50, 50)
+  pop()
+     
+  push()
+     ellipse(35, 175, 30, 30)
+  pop()
+     
+  push()
+     fill('255,255,255') 
+     ellipse(35, 175, 15, 15)
+  pop()
+     
+     
+    rotate(gds)
+    }
+  pop()
+  
+
+pop()
+
+  
+  
+  //third Circle
+    push()
+    translate(width/2, height/2)
+    strokeWeight(2);
+   
+    ellipse(0, 0, 250, 250)
+    
+
+    
+    for (let i = 0; i < gd; i++) {
+      
+      push()
+      fill('black')
+      ellipse(0, 0, 50, 250)
+      pop()
+      
+     
+
+    rotate(gds)
+    }
+  
+  
+  
+   push()
+   for (let i = 0; i < gd; i++) {
+      
+      fill('255,255,255') 
+      ellipse(16, 80, 10, 10)
+      rotate(gds)
+    }
+      pop()
+    
+    
+   
+    pop()
+  
+  
+  
+
+  //second Circle
+    push()
+    translate(width/2, height/2)
+    strokeWeight(2);
+   
+    ellipse(0, 0, 150, 150)
+    
+
+    
+    for (let i = 0; i < gd; i++) {
+      
+     triangle(10, 0, -10, 0, 0, 250) 
+      
+      push()
+      fill('black')
+      ellipse(0, 55, 15, 5)
+      pop()
+      
+      push()
+      fill('255,255,255') 
+      ellipse(0, 55, 5, 20)
+      pop()
+
+
+    rotate(gds)
+    }
+    
+    
+   
+    pop()
+  
+  
+
+
+ //Last Circle
+    push()
+    translate(width/2, height/2)
+    strokeWeight(2);
+   
+    ellipse(0, 0, 40, 40)
+    
+
+    
+    for (let i = 0; i < gd; i++) {
+ 
+   line(10, 0, -10, 17)
+          
+    rotate(gds)
+    }
+    
+    
+   
+    pop()
+
+}
